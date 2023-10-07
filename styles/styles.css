@@ -1,0 +1,67 @@
+/*
+  Color palette: 
+  bg: #060b28
+  mid: 084965
+  fg: eeeeec
+  cool: 0b1135
+*/
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  color: #ccc;
+  font-family: monospace;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #141414 50%, #080808 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  height: 400px;
+  width: 800px;
+  background-color:rgba(50,50,50,.9);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  padding: 20px 50px;
+  left:50%;
+  position:fixed;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+  color: #ccc;
+  font-weight: normal;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
