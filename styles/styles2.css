@@ -1,0 +1,79 @@
+/*
+  Color palette: 
+  bg: #060b28
+  mid: 084965
+  fg: eeeeec
+  cool: 0b1135
+
+  love this blue: 35b5d7
+*/
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  color: #ccc;
+  font-family: monospace;
+}
+
+/* general styling */
+.material-symbols-outlined {
+  font-size: 48px;
+  color: #5AA38F;
+  transition: color 0.3s;
+}
+
+/* main site */
+
+navbar {
+  width: 120px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #101123 30%, #000110 70%);
+  display: block;
+}
+
+navbar a.nav-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #b0b0b0; /* Default icon color */
+}
+
+navbar a.nav-link .material-symbols-outlined {
+  color: #b0b0b0; /* Default icon color */
+  font-size: 36px; /* Increase icon size */
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+navbar a.nav-link.active .material-symbols-outlined,
+navbar a.nav-link:hover .material-symbols-outlined {
+  color: #FFFFFF;
+}
+
+workarea {
+  width: 100%;
+  height: 100vh;
+  background-color: #29282e;
+  background: #000110;
+  display: block;
+  position: relative;
+}
+
+contentarea {
+  margin: 30px;
+  padding: 20px;
+  display: block;
+  color: #e0e0e0;
+  background-color: #18181e;
+  border: 1px solid #2a2a30;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  display: none;
+}

@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Frank Wolters</title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@200" rel="stylesheet" />
+	<link rel="stylesheet" href="styles/loading.css">
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+<div id="main">
+	<navbar>
+		<div class="nav-menu">
+			<a href="#" class="menu-item active">
+				<i class="material-symbols-outlined">rocket_launch</i>
+				<span class="item-title">Launchpad</span>
+			</a>
+			<a href="javascript:console.log('about me');" class="menu-item">
+				<i class="material-symbols-outlined">frame_person</i>
+				<span class="item-title">Profile</span>
+			</a>
+			<a href="#" class="menu-item">
+				<i class="material-symbols-outlined">deployed_code</i>
+				<span class="item-title">Solutions</span>
+			</a>
+			<a href="#" class="menu-item">
+				<i class="material-symbols-outlined">emoji_objects</i>
+				<span class="item-title">Insights</span>
+			</a>
+			<a href="#" class="menu-item">
+				<i class="material-symbols-outlined">person_play</i>
+				<span class="item-title">FunHub</span>
+			</a>
+		</div>
+	</navbar>
+	<workarea>
+		<section>
+			<header>
+				<h1>Launchpad</h1>
+			</header>
+			<div id="launchpad-content">
+				My name is <strong>Frank</strong>.
+				<br>
+				<br>
+				<br>
+				I find solutions to complex problems.
+				<br>
+				<h6 style="font-size: 0.67em;font-weight: normal;">Consultant ∙ Architect ∙ Developer</h6>
+			</div>
+		</section>
+	</workarea>
+	<loadingicon id="loader-core">
+		<div class="loading-circle circle-1">
+			<div class="loading-circle circle-2">
+				<div class="loading-circle circle-3"></div>
+			</div>
+		</div>
+	</loadingicon>
+</div>
+<script src="./js/loading.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
